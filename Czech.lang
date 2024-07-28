@@ -1,4 +1,4 @@
-#----------------------------------- Translated by tofonek#2339 -----------------------------------
+#----------------------------------- Translated by SiPiskej -----------------------------------
 
 ####----> Commands -->
 command.error.wrongUsage({usage},{name})=&cŠpatné použití: &8/&7lagg {name} {usage}
@@ -132,8 +132,8 @@ command.profile.started({time})=&6[&aClearLag&6] &aProfiler started, running for
 command.reload.name()=reload
 command.reload.usage()=
 command.reload.desc()=(Reloads clearlag)
-command.reload.begin()=&6[&aClearLag&6] &bAttempting to reload modules...
-command.reload.successful()=&6[&aClearLag&6] &bModules have been reloaded!
+command.reload.begin()=&6[&aClearLag&6] &bSnažím se aktualizovat moduly...
+command.reload.successful()=&6[&aClearLag&6] &bVšechny moduly byli aktualizovány!
 
 ##]-> /lagg samplememory
 command.samplememory.name()=samplememory
@@ -200,6 +200,14 @@ command.memory.usage()=[tick-rate]
 command.memory.desc()=(View Heap info)
 command.memory.message()=&3Started JVM heap sampling on the listed memory pools
 command.memory.invalidinteger({arg})=&4Invalid poll-rate specified&8: &c{arg}
+
+##]-> /lagg performance
+command.performance.name()=performance
+command.performance.usage()=[tick-rate]
+command.performance.desc()=(View Server Performance)
+command.performance.message()=&3Started thread sampling (More &1sleep&3 is better!)
+command.performance.invalidinteger({arg})=&4Invalid poll-rate specified&8: &c{arg}
+
 
 ##]-> /lagg performance
 command.performance.name()=performance
